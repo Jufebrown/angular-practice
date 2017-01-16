@@ -3,8 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Angular Practice</title>
+  <link rel="icon" type="image/svg" href="images/angular-icon.svg">
 </head>
-<body>
+<body ng-app='monkeyButtApp'>
+  <h1>Here's my angular app</h1>
+  <div ng-controller='Main-Ctrl'>
+    <h2>{{potatoes}}</h2>
+  </div>
+
   <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
