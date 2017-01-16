@@ -6,13 +6,15 @@
   <link rel="icon" type="image/png" href="images/favicon.ico">
 </head>
 <body ng-app='monkeyButtApp'>
-  <h1>Here's my angular app</h1>
-  <div ng-controller="MainCtrl">
-    <h2>{{potatoes}}</h2>
-    <input type="text" name="" ng-model="potatoes">
-  </div>
+  <div>Always There</div>
+
+  <div ng-view></div>
+
+  <div>Always There</div>
+
 
   <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
   <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
