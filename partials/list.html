@@ -1,5 +1,6 @@
 <h1>List Partial</h1>
 <h3 ng-if = "list.length > 1">List of {{list.length}} things</h3>
+<input type="text" ng-model="searchList" placeholder="Search here">
 <ul>
-  <li ng-repeat="listItem in list">{{listItem}}</li>
+  <li ng-repeat="listItem in list | filter: searchList"><a href="#/list/{{listItem.id}}">{{listItem.item}}</a></li>
 </ul>
