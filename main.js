@@ -11,7 +11,7 @@ app.config(($routeProvider, $locationProvider) => {
     controller: 'ListCtrl',
     templateUrl: 'partials/list.html'
   })
-  .when('/list/:someVariable',{
+  .when('/list/:someVariable', {
     controller: 'DetailCtrl',
     templateUrl: 'partials/detail.html'
   })
