@@ -1,4 +1,4 @@
-var app = angular.module('monkeyButtApp', ['ngRoute'])
+const app = angular.module('monkeyButtApp', ['ngRoute'])
 
 app.config(($routeProvider, $locationProvider) => {
   $locationProvider.hashPrefix('')
