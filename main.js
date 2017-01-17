@@ -11,10 +11,20 @@ app.config(($routeProvider, $locationProvider) => {
     controller: 'ListCtrl',
     templateUrl: 'partials/list.html'
   })
+  .when('/list/:someVariable',{
+    controller: 'DetailCtrl',
+    templateUrl: 'partials/detail.html'
+  })
+  .otherwise({
+    redirectTo: '/'
+  })
 })
 
 app.controller('MainCtrl', function($scope) {
   $scope.potatoes = 'baked!'
+  $scope.onClickFunction = () => {
+    $scope.potatoes = 'you clicked the button'
+  }
 })
 
 app.controller('ListCtrl', function($scope, $http) {
