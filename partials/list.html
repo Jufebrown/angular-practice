@@ -1,9 +1,5 @@
 <h1>List Partial</h1>
-<h3>List of Things</h3>
+<h3 ng-if = "list.length > 1">List of {{list.length}} things</h3>
 <ul>
-  <li>thing 1</li>
-  <li>thing 2</li>
-  <li>thing 3</li>
-  <li>thing 4</li>
-  <li>thing 5</li>
+  <li ng-repeat="listItem in list">{{listItem}}</li>
 </ul>
