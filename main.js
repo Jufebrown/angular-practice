@@ -1,13 +1,14 @@
 var app = angular.module('monkeyButtApp', ['ngRoute'])
 
-app.config(($routeProvider) => {
+app.config(($routeProvider, $locationProvider) => {
+  $locationProvider.hashPrefix('')
   $routeProvider
   .when('/', {
     controller: 'MainCtrl',
     templateUrl: 'partials/main.html'
   })
   .when('/list', {
-    controller: 'listCtrl',
+    controller: 'ListCtrl',
     templateUrl: 'partials/list.html'
   })
 })
