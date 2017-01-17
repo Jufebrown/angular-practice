@@ -23,7 +23,7 @@ app.config(($routeProvider, $locationProvider) => {
 app.controller('MainCtrl', function($scope) {
   $scope.potatoes = 'baked!'
   $scope.onClickFunction = () => {
-    $scope.potatoes = 'you clicked the button'
+
   }
 })
 
