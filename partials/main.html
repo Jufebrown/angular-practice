@@ -1,15 +1,16 @@
-<h1>Main Partial!</h1>
+<div>
+  <h1>Main Partial!</h1>
 
   <div>
     <h2>{{potatoes}}</h2>
     <input type="text" ng-model="potatoes">
-    <button ng-click="onClickFunction()">Click Me</button>
+    <button ng-click="onClickFunction(potatoes)">Click Me</button>
   </div>
 
   <div>
-    <p>My variable is {{myVariable}}</p>
+    <p>My variable is {{mainVar}}</p>
 
     <p>Sharing the variable: {{mainVar}}</p>
 
-    <a ng-click></a>
   </div>
+</div>
