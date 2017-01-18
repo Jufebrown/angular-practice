@@ -1,10 +1,9 @@
-app.controller('MainCtrl', function($scope, simpleFactory, myFactory) {
+app.controller('MainCtrl', function($scope, simpleFactory) {
+  console.log('anything')
   $scope.potatoes = 'baked!'
-  $scope.onClickFunction = () => {
+  $scope.onClickFunction = (newVal) => {
+    console.log("newVal", newVal)
+    simpleFactory.setVariable(newVal)
   }
   $scope.mainVar = simpleFactory.getVariable()
-  $scope.setVariable = function(newVariable) {
-    console.log('new variable is', newVariable)
-    simpleFactory.setVariable(newVariable)
-  }
 })
